@@ -19,3 +19,11 @@ footer {
   bottom: 0; 
   margin: 10px 0px 20px 0px;
 }
+.logo {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 10%;
+  margin: 0 auto;
+  z-index: 9999999;
+}
