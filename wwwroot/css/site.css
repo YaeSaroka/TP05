@@ -27,3 +27,25 @@ footer {
   margin: 0 auto;
   z-index: 9999999;
 }
+#img1{
+  margin: 155px 0 0 0;
+  padding: 20px;
+}
+#img_final{
+  margin: 0px 0 0 0;
+  padding: 15px;
+}
+
+.respuesta {
+  font-size: 20px;
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  border-top: 1px solid white;
+  float: right;
+}

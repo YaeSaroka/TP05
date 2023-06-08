@@ -12,6 +12,10 @@ public class HomeController : Controller
     {
         return View("Tutorial");
     }
+    public IActionResult Creditos()
+    {
+        return View("Creditos");
+    }
     public IActionResult Comenzar()
     {
         ViewBag.estadoJuego = Escape.GetEstadoJuego();
@@ -22,16 +26,24 @@ public class HomeController : Controller
         if(sala != Escape.GetEstadoJuego()) return View("Habitacion_"+Escape.GetEstadoJuego());
         else
         {
+            sala= Escape.GetEstadoJuego();
             bool estado_juego= Escape.ResolverSala(sala, clave);
-            if(sala ==4 && estado_juego==true){
+            if(sala==4&&estado_juego==false){
+                ViewBag.Error=true;
                 return View("victoria");
             }
-            if(estado_juego==true) return View("Habitacion_"+Escape.GetEstadoJuego());
+            else if(estado_juego==true)
+            {
+                return View("Habitacion_"+Escape.GetEstadoJuego());
+            }
             else 
             {
-                ViewBag.Error="LA CLAVE ES INCORRECTA :(";
-            return View("Habitacion_"+Escape.GetEstadoJuego());
+                ViewBag.Error=false;
+                return View("Habitacion_"+Escape.GetEstadoJuego());
             }  
+            
+            
         }
     }
+
 }

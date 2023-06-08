@@ -1,0 +1,15 @@
+@{
+    ViewData["Title"] = "Habitacion_3";
+}
+<br><br><br><br><h1 style="text-align: center;"><font style="color:#DDB568"><b>Habitación 3</b></font></h1>
+<h2 style="text-align: center;"><font style="color:#ac9976">Descubre las diferencias!!</font></h2>
+<img id="img1" src="/Img/acertijos/CUADRO_3.JPG" class="img-fluid" 
+style="border: 2px solid white">
+<form action='@Url.Action("Habitacion")'>
+    <label for="quantity" style="color: #DDB568">Respuesta:</label>
+    <input type="hidden" name="sala" value="3">
+    <input type="text" id="quantity" name="clave" >
+    <button style="background-color:#DDB568;">Validar</button>
+</form>
+<button onclick="alert('Pista 1: Observá cuidadosamente el fondo :)')"> Pista 1 </button>
+<button onclick="alert('Pista 1: ¿Y si te fijas en los accesorios?')"> Pista 2 </button>

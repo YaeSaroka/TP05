@@ -1,0 +1,16 @@
+@{
+    ViewData["Title"] = "Habitacion_2";
+}
+<br><br><br><br><h1 style="text-align: center;"><font style="color:#DDB568"><b>Habitación 2</b></font></h1>
+<h2 style="text-align: center;"><font style="color:#ac9976">Resolvé el siguiente acertijo de forma horaria</font></h2>
+<img id="img1" src="/Img/acertijos/NUMERO_2.jpg" class="img-fluid" 
+style="border: 2px solid white">
+<form action='@Url.Action("Habitacion")'>
+    <label for="quantity" style="color: #DDB568">Respuesta:</label>
+    <input type="hidden" name="sala" value="2">
+    <input type="text" id="quantity" name="clave" >
+    <button style="background-color:#DDB568;">Validar</button>
+</form>
+<button onclick="alert('Pista 1: Para resolverlo debes restar dos numeros de los vértices y luego multiplicarlos con el restante')"> Pista 1 </button>
+
+
